@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cooking Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg");
+                background-size:cover;
+               background-attachment: fixed;
+            }
+            form
+            {
+               border:5px solid aquamarine;
+               border-radius:10px;
+               margin-top:150px;
+               margin-left:350px;
+               width:700px;
+               height:250px;
+               font-size:23px;
+            }
+            label{
+                margin-left:100px;
+                color:white;
+            }
+            input[type="text"],input[type="password"]
+            {
+                float:right;
+                border:1px solid black;
+                margin-right:150px;
+                 height:22px;
+                 width:200px;
+                 border-radius:5px;
+                 height:30px;
+                 font-size:17px;
+                 outline:none;
+                 
+            }
+            input[type="submit"]
+            {
+                width:150px;
+                height:35px;
+                margin-left:270px;
+                background-color: aqua;
+                color:blueviolet;
+                font-size:23px;
+                font-weight:bold;
+                font-family:arial;
+            }
+            p{
+                    color:blueviolet;
+                    font-size:25px;
+                    margin-left:220px;
+                    font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="cooking_login.jsp" method="post">
+            <p>L O G I N &nbsp;&nbsp;&nbsp;P A G E </p>
+            <label>Enter Your User Name : </label>
+            <input type="text" name="uname" placeholder="user name" required="required"/><br/>
+            <br><label>Enter Your Password : </label>
+            <input type="password" name="pwd" required="required"/><br/>
+            <br><input type="submit" value="L O G I N"/>
+        </form>
+
+    </body>
+</html>

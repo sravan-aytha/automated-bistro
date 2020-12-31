@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+        .food-munch-logo {
+    height: 80px;
+    width: 70px;
+}
+
+#navitem1 {
+    color: black;
+}
+
+#navitem2 {
+    color: black;
+}
+
+#navitem3 {
+    color: black;
+}
+
+#navitem4 {
+    color: black;
+}
+.delivery-and-payment-section {
+    background-image:url("https://cdn.wallpapersafari.com/11/91/8Y4dJS.jpg");
+		background-size:cover;
+		font-family:MV Boli;
+		font-size:22px;
+}
+.delivery-and-payment-section-img {
+    margin-top: 20px;
+  width:400px;
+  height: 270px;
+  border-radius: 10px;
+}
+.delivery-and-payment-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.delivery-and-payment-section-description {
+    margin-top: 20px;
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 25px;
+}
+.payment-card-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 28px;
+}
+.custom-button {
+  color: white;
+  background-color: #d0b200;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+        /*
+	body
+	{
+		
+		background-image:url("https://cdn.wallpapersafari.com/11/91/8Y4dJS.jpg");
+		background-size:cover;
+		font-family:MV Boli;
+		font-size:22px;
+	}
+
+	img
+	{
+		float:right;
+		border:2px solid black;
+		width:450px;
+		height:300px;
+		margin-right:40px;
+		border-radius:30px;
+		margin-top:80px;
+	}
+	#home
+	{
+	float:left;
+	
+	width:700px;
+	margin-left:100px;
+	margin-top:60px;
+	}
+        .navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 35px;
+  width:1100px;
+  margin-left:100px;
+        }
+
+        .navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+         .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+
+	</style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#" id="navitem1">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="menu.html" id="navitem1">User's</a>
+                    <a class="nav-link" href="management_music_dispaly.jsp" target="_blank" id="navitem1">Music</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Deliveries
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="deliveries.jsp">Display delivery's</a>
+						  
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="cancel_delivery.html">Cancel Deliveries</a>
+						</div>
+					  </li>
+                    <a class="nav-link" href="user_reviews.jsp" id="navitem1">User reviews</a>                       
+                    <a class="nav-link" href="salary_page.jsp" id="navitem1">Incentives</a>
+                    <a class="nav-link" href="feedback_display.jsp" id="navitem1">Feedbacks</a>
+                    <a class="nav-link" href="managenent_cooking_page2.jsp" id="navitem1">Chef's page</a>
+                    <a class="nav-link" href="managenent_history.html" id="navitem1">History</a>
+                    <a class="nav-link" href="index.html" id="navitem1">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="delivery-and-payment-section pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5 order-1 order-md-2">
+              <div class="text-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRfpZB0_3qGRT0vx7Jlw662goIgQc9en4esg&usqp=CAU"
+                  class="delivery-and-payment-section-img"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-7 order-2 order-md-1">
+              <!--<h1 class="delivery-and-payment-section-heading">
+                Delivery and Payment
+              </h1>-->
+              <p class="delivery-and-payment-section-description">
+                Think of good food and best services, no other name comes in mind except and except Our Restaurent.
+                It is a one stop solution for the taste concious people in the city. Specially LAAL MASS and JANGLI parantha 
+                is all above this world.
+                Cookery is not chemistry. It is an art. It requires instinct and taste rather than exact measurements.
+                Our Restaurent has the best chef cooking delicious and spicy food.It is the best place for foodies to enjoy
+                We also provide the best ambiance with many new facilities like favorite song section,and also provided various stories to entertain you
+              </p>
+              <!--<button class="custom-button">Order Now</button>
+              <div class="mt-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                  class="payment-card-img"
+                />
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png"
+                  class="payment-card-img"
+                />
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png"
+                  class="payment-card-img"
+                />
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png"
+                  class="payment-card-img"
+                />
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--
+	<center><h1 style="color:blue;font-weight:bold;">R O H S R A &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;B I S T R O</h1></center>
+  
+  <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="menu.html">User's Page</a>
+  <a href="management_music_dispaly.jsp" target="_blank">Music</a>
+  <div class="dropdown">
+    <button class="dropbtn">Deliveries 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="deliveries.jsp">Display Deliveries</a>
+      <a href="cancel_delivery.html">Cancel Delivery</a>
+      
+    </div>
+  </div>
+  <a href="salary_page.jsp">Incentive</a>
+  <a href="feedback_display.jsp">Feedback</a>
+  <a href="management_cooking_page2.jsp">Chef's Page</a>
+  <a href="management_order_history.jsp">History</a>
+  <a href="index.html">Logout</a>
+</div>
+
+<div id="home">
+<p>Think of good food and best services, no other name comes in mind except and except Our Restaurent.
+ It is a one stop solution for the taste concious people in the city. Specially LAAL MASS and JANGLI parantha 
+ is all above this world.</p>
+ <p>Cookery is not chemistry. It is an art. It requires instinct and taste rather than exact measurements.</p>
+ <p>Our Restaurent has the best chef cooking delicious and spicy food.It is the best place for foodies to enjoy</p>
+ <p>We also provide the best ambiance with many new facilities like favorite song section,and also provided various stories to entertain you</p>
+ </div>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRfpZB0_3qGRT0vx7Jlw662goIgQc9en4esg&usqp=CAU">
+-->  
+
+</body>
+  </html>

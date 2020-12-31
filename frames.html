@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+         window.setTimeout(function () {
+  window.location.reload();
+}, 2000);
+function items()
+{
+    var str="";
+    var menu=localStorage.getItem("items");
+    menu=menu.split(",");
+    var price=localStorage.getItem("amount");
+    price=price.split(",");
+    for(i=0;i<menu.length;i++)
+    {
+        str=str+menu[i]+"-"+price[i]+"</br>";
+    }
+    document.getElementById("item").innerHTML=str;
+}
+     </script>
+    </head>
+    <body onload="items()">
+        <div id="item"></div>
+    </body>
+</html>

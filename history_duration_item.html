@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        function validDate() {
+    var date = document.getElementById("date1").value;
+    todayDate = getTodaysDate();
+    if (date > todayDate)
+    {
+        alert("pls select a valid date");
+   location.reload();
+    }
+}
+function validDate1() {
+    var date = document.getElementById("date2").value;
+    todayDate = getTodaysDate();
+    if (date > todayDate)
+    {
+        alert("pls select a valid date");
+   location.reload();
+}
+}
+function getTodaysDate(){
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth() + 1;
+    year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    today = year + "-" + month + "-" + day; 
+
+    return today;
+}
+    </script>
+
+    </head>
+    <body>
+        <form action="history_duration_item.jsp" method="post">
+            <input type="text" name="item"/>
+            <input type="date" name="date1"/>
+            <input type="date" name="date2"/>
+            <input type="submit"/>
+        </form> 
+    </body>
+</html>

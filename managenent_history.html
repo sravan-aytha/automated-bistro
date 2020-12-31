@@ -1,0 +1,233 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        function validDate() {
+    var date = document.getElementById("date1").value;
+    todayDate = getTodaysDate();
+    if (date > todayDate)
+    {
+        alert("pls select a valid date");
+   location.reload();
+}
+
+}
+function getTodaysDate(){
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth() + 1;
+    year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    today = year + "-" + month + "-" + day; 
+
+    return today;
+}
+function bydate()
+{
+    var x=document.getElementById("head");
+    var y=document.getElementById("form");
+   // x.style.display="none";
+    y.style.display="block";
+}
+function byduration()
+{
+    var x=document.getElementById("head1");
+    var y=document.getElementById("form1");
+    //x.style.display="none";
+    y.style.display="block";
+}
+function byitem()
+{
+    var x=document.getElementById("head2");
+    var y=document.getElementById("form2");
+    //x.style.display="none";
+    y.style.display="block";
+}
+function byitemdate()
+{
+    var x=document.getElementById("head3");
+    var y=document.getElementById("form3");
+    //x.style.display="none";
+    y.style.display="block";
+}
+function byitemduration()
+{
+    var x=document.getElementById("head4");
+    var y=document.getElementById("form4");
+    //x.style.display="none";
+    y.style.display="block";
+}
+    </script>
+    <style>
+        .food-munch-logo {
+    height: 80px;
+    width: 70px;
+}
+
+#navitem1 {
+    color: black;
+    font-size: 18px;
+}
+
+#navitem2 {
+    
+   background-color: #d1ddeb;
+  
+}
+
+#navitem3 {
+    color: black;
+    font-size: 18px;
+}
+
+#navitem4 {
+    color: black;
+}
+.card-bg{
+    background-color: wheat;
+}
+     #form
+     {
+         display:none;
+     }
+     #form1
+     {
+         display:none;
+     }
+     #form2
+     {
+         display:none;
+     }
+#form3
+     {
+         display:none;
+     }
+     #form4
+     {
+         display:none;
+     }
+     body
+{
+background-color: white;
+background-size:cover;
+position:relative;
+
+}
+    </style>
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navitem2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#" id="navitem1">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="menu.html" id="navitem1">User's</a>
+                    <a class="nav-link" href="management_music_dispaly.jsp" target="_blank" id="navitem1">Music</a>
+					<li class="nav-item dropdown" id="navitem3">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Deliveries
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="deliveries.jsp">Display delivery's</a>
+						  
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="cancel_delivery.html">Cancel Deliveries</a>
+						</div>
+					  </li>
+                    <a class="nav-link" href="user_reviews.jsp" id="navitem1">User reviews</a>                       
+                    <a class="nav-link" href="salary_page.jsp" id="navitem1">Incentives</a>
+                    <a class="nav-link" href="feedback_display.jsp" id="navitem1">Feedbacks</a>
+                    <a class="nav-link" href="management_cooking_page2.jsp" id="navitem1">Chef's page</a>
+                    <!--<a class="nav-link" href="managenent_history.html" id="navitem1">History</a>-->
+                    <a class="nav-link" href="index.html" id="navitem1">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <center><h1><br/> Order's History <br/></h1></center>
+        <div class="container " >
+            <div class="row " >
+                <div class="col-12 col-md-6 mt-5 " onclick="bydate()">
+                   
+                   <div class="shadow-lg date-card p-3 mb-3 text-center card-bg">
+                       <br/><br/><br/>
+                    <h3 id="head"> Get history by Date <br/><br/><br/></h3>
+                  
+                    <form action="history_by_date.jsp" method="post"  id="form">
+                        <input type="date" name="date1" id="date1" class="mb-3" oninput="validDate()"/><br/>
+                        <input type="submit" class="btn btn-secondary" />
+                    </form>
+                </div>  
+            </div>
+        <div class="col-12 col-md-6 mt-5 " onclick="byduration()">
+            <div class="shadow-lg date-card p-3 mb-3 text-center card-bg">
+                <br/><br/><br/>
+            <h3 id="head1"> Get history by duration <br/><br/><br/></h3>
+           
+            <form action="history_by_duration.jsp" method="post" id="form1">
+                <input type="date" name="date1" class="mb-3" id="date1" oninput="validDate()"/><!--<br/>-->
+                <input type="date" name="date2" class="ml-3 mb-3" id="date2" oninput="validDate1()"/><br/>
+                <input type="submit" class="btn btn-secondary"/>
+        </form>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mt-5" onclick="byitem()">
+            <div class="shadow-lg date-card p-3 mb-3 text-center card-bg">
+                <br/><br/><br/>
+                <h3 id="head2">Get history by item  <br/><br/><br/></h3>
+               
+                <form action="item_contains.jsp" method="post" id="form2">
+                    <input type="text" placeholder="@item name" class="mb-3" name="item"/><br/>
+                    <input type="submit" class="btn btn-secondary"/>
+                </form> 
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mt-5" onclick="byitemdate()">
+            <div class="shadow-lg date-card p-3 mb-3 text-center card-bg">
+                <br/><br/><br/>
+                <h3 id="head3"> Get history by date and item<br/><br/><br/></h3>
+                
+                <form action="history_date_item.jsp" method="post" id="form3">
+                    <input type="text" placeholder="@item name" name="item"/>
+                    <input type="date" class="ml-3 mb-3" name="date1"/><br/>
+                    <input type="submit" class="btn btn-secondary"/>
+                </form> 
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mt-5" onclick="byitemduration()">
+            <div class="shadow-lg date-card p-3 mb-3 text-center card-bg">
+                <br/><br/><br/>
+                <h3 id="head4">Get history by duration and item<br/><br/><br/></h3>
+                
+                <form action="history_duration_item.jsp" method="post" id="form4">
+                    <input type="text" class="mb-3" name="item" placeholder="@item name"/><br>
+                    <input type="date" class="mb-3" name="date1"/>
+                    <input type="date" name="date2"/><br/>
+                    <input type="submit" class="btn btn-secondary"/>
+                </form> 
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+</html>

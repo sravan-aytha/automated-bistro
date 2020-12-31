@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>feedback</title>
+<script src="hotel.js">
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<style>
+body
+{
+background-image:url("https://theridgeatchukkercrsc.pilera.com/templates/frosted_curves/skins/aquaAspen/images/skin_background.jpg");
+background-size:cover;
+
+}
+textarea
+{
+margin-left:160px;
+margin-top:10px;
+border:2px solid blue;
+border-radius:10px;
+font-size:20px;
+}
+input[type=radio]
+{
+border:2px solid blue;
+width:15px;
+height:15px;
+margin-left:5px;
+}
+select{
+margin-left:5px;
+width:150px;
+height:35px;
+border:2px solid blue;
+font-size:20px;
+border-radius:10px;
+}
+input[type="submit"]
+{
+font-size:20px;
+width:150px;
+text-align:center;
+height:30px;
+color:black;
+border:1px solid blue;
+border-radius:10px;
+margin-left:250px;
+}
+#sub{
+width:150px;
+text-align:center;
+height:30px;
+color:black;
+border:1px solid blue;
+border-radius:10px;
+margin-left:150px;
+}
+#form
+{
+padding-bottom:30px;
+border:2px solid white;
+background-color:black;
+width:690px;
+color:white;
+opacity:0.75;
+margin-left:350px;
+margin-right:400px;
+margin-top:30px;
+border-radius:15px;
+padding-left:50px;
+padding-top:50px;
+font-size:27px;
+padding-right:25px;
+}
+input[type=text]
+{
+width:200px;
+height:35px;
+border:2px solid blue;
+border-radius:10px;
+margin-left:5px;
+font-size:20px;
+}
+h1{
+color:white;
+text-align:center;
+font-size:40px;
+font-family:tahoma;
+}
+#pic{
+float:left;
+margin-left:25px;
+margin-top:50px;
+border-radius:50%;
+opacity:0.9;
+}
+.food-munch-logo {
+    height: 80px;
+    width: 70px;
+}
+
+#navitem1 {
+    color: black;
+    font-size:18px;
+}
+
+#navitem2 {
+   background-color: #d1ddeb;
+}
+
+#navitem3 {
+    color: black;
+}
+
+#navitem4 {
+    color: black;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navitem2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                   <a class="nav-link" href="index.html" id="navitem1">Home</a>
+                    <a class="nav-link active" href="whychooseus.html" id="navitem1">
+                        Why Choose Us
+                        <span class="sr-only">(current)</span>
+                    </a>
+                      <a class="nav-link" href="user_reviews.jsp" id="navitem1">User Reviews</a>
+                      
+                    <a class="nav-link" href="menu.html" id="navitem1">Explore Menu</a>
+                    <a class="nav-link" href="Tales.html" id="navitem1">Fun Zone</a>
+		  <a class="nav-link" href="FollowUs.html" id="navitem1">Follow Us</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </nav><br><br><br><br><br>
+<h1> User  Feedback</h1>
+<img id="pic"src="https://i.gifer.com/7SpJ.gif" width="300" height="600" >
+<form action="feedback_intake.jsp" method="post">
+<div id="form">
+    
+<label> Name  :</label>
+<input type="text" name="cname"><br/><br/>
+<label>You had dined in:</label>
+<select name="table">
+<option>Table Number</option>
+<option>Table-1</option>
+<option>Table-2</option>
+<option>Table-3</option>
+<option>Table-4</option>
+<option>Table-5</option>
+</select>
+<br/><br/><label>Please Rate Our</label><br/><br/><label> Service:</label>
+&nbsp;<input type="radio" name="service" value="Excellent"/>Excellent
+<input type="radio" name="service" value="Good"/>Good
+<input type="radio" name="service" value="Satisfactory"/>Satisfactory
+<input type="radio" name="service" value="Bad"/>Bad
+<br/><br/>
+<label>  Food :</label>
+&nbsp;&nbsp;&nbsp;<input type="radio" name="food" value="Excellent"/>Excellent
+<input type="radio" name="food" value="Good"/>Good
+<input type="radio" name="food" value="Satisfactory"/>Satisfactory
+<input type="radio" name="food" value="Bad"/>Bad
+<br/><br/>
+<label>Ambience :</label>
+<input type="radio" name="amb" value="Excellent"/>Excellent
+<input type="radio" name="amb" value="Good"/>Good
+<input type="radio" name="amb" value="Satisfactory"/>Satisfactory
+<input type="radio" name="amb" value="Bad"/>Bad
+<br/><br/>
+<label>Additional Feedback</label><br/>
+<textarea rows="5" cols="40" id="exp" name="like"></textarea><br/><br/>
+<input type="submit" value="S U B M I T">
+
+</div><br/><br/><br/>
+</form>
+</body>

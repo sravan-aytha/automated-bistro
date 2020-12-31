@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cancel_delivery</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image:url("https://i.pinimg.com/736x/e6/7d/af/e67daf68a6e8f6d4a9283cb7d64b098c.jpg");
+                background-size:cover;
+                background-position:center;
+                background-repeat: no-repeat;
+                text-align:center
+            }
+            h1{
+                color:white;
+                margin-top:150px;
+            }
+            form{
+                margin-left:0px;
+                margin-top:50px;
+                font-size:28px;
+                color:white;
+                text-align:center;
+            }
+            input[type="submit"]
+            {
+                width:120px;
+                height:35px;
+                font-size:25px;
+                margin-top:20px;
+                border-radius:15px;
+                outline:none;
+                
+            }
+            input[type="text"]
+            {
+                font-size:25px;
+                text-align:center;
+                width:250px;
+                border-radius:15px;
+                outline:none;
+            }
+            .food-munch-logo {
+    height: 80px;
+    width: 70px;
+}
+
+#navitem1 {
+    color: black;
+}
+
+#navitem2 {
+    color: black;
+}
+
+#navitem3 {
+    color: black;
+}
+
+#navitem4 {
+    color: black;
+}
+
+        </style>
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="management.html" id="navitem1">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="menu.html" id="navitem1">User's</a>
+                    <a class="nav-link" href="management_music_dispaly.jsp" target="_blank" id="navitem1">Music</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Deliveries
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						 					  <a class="dropdown-item" href="deliveries.jsp">Display Deliveries</a>
+						</div>
+					  </li>
+                    <!--<a class="nav-link" href="salary_page.jsp" id="navitem1">Incentives</a>-->
+                    <a class="nav-link" href="salary_page.jsp" id="navitem1">Incentives</a>
+                    <a class="nav-link" href="user_reviews.jsp" id="navitem1">User reviews</a>
+                     <a class="nav-link" href="feedback_display.jsp" id="navitem1">Feedbacks</a>
+                    <a class="nav-link" href="management_cooking_page2.jsp" id="navitem1">Chef's page</a>
+                   
+                    <a class="nav-link" href="index.html" id="navitem1">Logout</a>
+                    </div>
+            </div>
+        </div>
+        </nav>
+        <h1>O R D E R &nbsp;&nbsp;&nbsp;&nbsp;C A N C E L L A T I O N</h1>
+        <form action="cancel_delivery.jsp" method="post">
+            <label> Enter the order id : </label>
+            <input type="text" name="id" autocomplete="off"/>
+            <br/><input type="submit">
+        </form>
+    </body>
+</html>

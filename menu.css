@@ -1,0 +1,145 @@
+    body
+	{
+		background-image:url("https://www.rhubarbgroup.com/wp-content/uploads/2019/03/home-restaurants-background.jpg.webp");
+		color:white;
+		background-size:cover;
+		background-attachment:fixed;
+	}
+	a{
+		color:white;
+                text-decoration: none;
+	}
+            	input[type="number"]
+	{
+		background-color:DarkOrange;
+		border-radius:40px;
+                width:33px;
+                font-size:15px;
+              outline:none;
+             
+	}
+        select
+	{
+		background-color:DarkOrange;
+		border-radius:40px;
+		height:20px;
+	}
+        input[type=number]::-webkit-inner-spin-button input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+	h1
+	{
+		background-image: linear-gradient(to bottom right, red, yellow);
+		font-family:Microsoft YaHei;
+		height:75px;
+		font-size:40px;
+		color:black;
+		border-radius:30px;
+                
+	}
+            td,th{
+                width:600px;
+                word-wrap: break-word;
+                height:40px;
+                font-size:23px;
+            }
+            table{
+                margin-left:75px;
+                margin-top:15px;
+            }
+            input:checked
+	{
+		width:20px;
+		height:20px;
+	}
+        
+        input[type=submit]
+        {
+            width:150px;
+            height:30px;
+            font-size:23px;
+        }
+        p{
+            background-color:brown;
+		border:2px solid black;
+		width:1225px;
+                padding-top:5px;
+                height:35px;
+		font-size:25px;
+                font-weight:bold;
+                padding-left:25px;
+                margin-left:25px;
+		border-radius:30px;
+		font-family:Microsoft YaHei;
+        }
+        #tables{
+        width:150px;
+	height:35px;
+	background-color:cyan;
+	float:right;
+	margin-right:50px;
+	font-size:20px;
+	outline:none;
+         border-radius:40px;
+        }
+        #desc{
+            
+            border: 1px solid white;
+            border-radius:2px;
+            margin-top:-200px;
+        }
+        span{
+            font-size: 23px;
+            margin-left:80px;
+            
+        }
+        textarea{
+            font-size:20px;
+            border:1px solid brown;
+            border-radius: 10px;
+            margin-left:290px;
+            margin-top:-20px;
+            
+        }
+        hr{
+            height:5px;
+            background:white;
+        }
+        #quick
+        {
+            margin-right:-80px;
+            margin-left:80px;
+        }
+        .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ffffff00;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #ffff00;
+  width: 0%;
+}
+
+#icon{
+    font-size:50px;
+    text-align:center;
+    margin-bottom:-1000px;
+    margin-left:-30px;
+   
+}
